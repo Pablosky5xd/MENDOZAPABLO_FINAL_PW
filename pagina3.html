@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs y Formulario</title>
+    <link rel="stylesheet" href="estilos.css/pagina3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario y APIs</h1>
+        
+        <!-- Formulario de datos personales -->
+        <form id="personalForm">
+            <h2>Formulario de Datos Personales</h2>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Enviar Datos</button>
+                <button type="button" id="limpiarForm" class="clear-btn">Limpiar</button>
+            </div>
+        </form>
+        
+        <!-- Secciones dinámicas para las APIs -->
+        <div id="apiSection">
+            <!-- Galería de imágenes -->
+            <div id="imageGallery" class="image-gallery">
+                <h2>Galería de Imágenes</h2>
+                <img id="randomImage" src="" alt="Imagen aleatoria" />
+                <button id="changeImageBtn" class="change-photo-btn">Cambiar Imagen</button>
+            </div>
+            
+            <!-- Sistema Solar -->
+            <div id="carGallery" class="car-Gallery">
+                <h2>Galeria de Vehiculos</h2>
+    <ul class="car-list"></ul>
+            </div>
+        </div>
+        
+        <!-- Navegación -->
+        <nav class="navigation">
+            <a href="index.html">Volver al Login</a>
+            <a href="pagina2.html">presentacion</a>
+            <a href="pagina4.html">Datos del empleado</a>
+        </nav>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="javascript.js/pagina3.js"></script>
+</body>
+</html>
+
+

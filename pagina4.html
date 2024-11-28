@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones y Formulario</title>
+    <link rel="stylesheet" href="estilos.css/pagina4.css">
+</head>
+<body>
+ 
+    
+    <div id="resultado">
+        <p id="resultado-text"></p>
+    </div>
+
+    <h2>Formulario</h2>
+    <form id="formulario" onsubmit="enviarFormulario(event)">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="calificacion">Calificación:</label>
+        <input type="number" id="calificacion" name="calificacion" min="1" max="10" required><br><br>
+
+        <label for="mensaje">Observación:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+        <label for="remitente">Remitente:</label>
+        <input type="text" id="remitente" name="remitente" required><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="button" onclick="limpiarFormulario()">Limpiar</button>
+    </form>
+
+    <nav class="navigation">
+        <a href="index.html">Volver al Login</a>
+        <a href="pagina2.html">presentacion</a>
+        <a href="pagina3.html">APIs</a>
+        
+    </nav>
+    
+
+    <script src="javascript.js/pagina4.js"></script>
+</body>
+</html>

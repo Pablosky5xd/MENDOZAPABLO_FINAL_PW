@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="estilos.css/pagina2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bienvenido a nuestro sistema</h1>
+        </header>
+
+        <section id="mensaje-bienvenida">
+            <!-- Mensaje de bienvenida dinámico -->
+            <p id="mensaje">Hola, por favor ingresa tu nombre para continuar.</p>
+        </section>
+
+        <section id="formulario-nombre">
+            <!-- Formulario para ingresar el nombre -->
+            <label for="nombre-usuario">Ingresa tu nombre:</label>
+            <input type="text" id="nombre-usuario" placeholder="Tu nombre aquí" required>
+            <button onclick="darBienvenida()">Aceptar</button>
+        </section>
+
+        <section id="descripcion-paginas">
+            <h2>Descripción de las páginas</h2>
+            <ul>
+                <li><strong>Login:</strong> Página para iniciar sesión en el sistema.</li>
+                <li><strong>APIs:</strong> Información y manejo de APIs.</li>
+                <li><strong>Datos del empleado:</strong> Gestión de información del empleado.</li>
+            </ul>
+        </section>
+
+        <nav class="navigation">
+            <!-- Botones para navegar a las demás páginas -->
+            <a href="index.html">Ir al Login</a>
+            <a href="pagina3.html">Ir a APIs</a>
+            <a href="pagina4.html">Ir a Datos del empleado</a>
+        </nav>
+    </div>
+
+    <script src="javascript.js/pagina2.js"></script>
+</body>
+</html>

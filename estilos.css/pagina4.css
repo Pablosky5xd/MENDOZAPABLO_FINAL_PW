@@ -1,0 +1,76 @@
+/* Estilo para el formulario */
+form {
+    justify-content: center;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: 48%;
+    display: inline-block;
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #2c6b2f;
+}
+
+form button:last-child {
+    background-color: #d32f2f;
+}
+
+form button:last-child:hover {
+    background-color: #9a1c1c;
+}
+/* Estilo para los botones de navegación */
+.navigation a {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 0 10px;
+    background-color: #1976d2; /* Azul primario */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    justify-content: center;
+}
+
+.navigation a:hover {
+    background-color: #004ba0; /* Azul más oscuro */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más marcada */
+}
+
+/* Opcional: centrado vertical del texto */
+.navigation a:active {
+    background-color: #002f6c; /* Azul aún más oscuro para clic */
+    transform: scale(0.95); /* Efecto de "presión" */
+}
